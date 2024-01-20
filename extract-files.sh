@@ -81,6 +81,10 @@ function blob_fixup() {
         [ "$2" = "" ] && return 0
         "${PATCHELF}" --replace-needed "libhidlbase.so" "libhidlbase-v32.so" "${2}"
         ;;
+    # Link dolby blobs with v33 libstagefright_foundation
+    vendor/lib/libstagefright_soft_ddpdec.so | vendor/lib/libstagefright_soft_ac4dec.so | vendor/lib/libstagefrightdolby.so | vendor/lib64/libstagefright_soft_ddpdec.so | vendor/lib64/libdlbdsservice.so | vendor/lib64/libstagefright_soft_ac4dec.so | vendor/lib64/libstagefrightdolby.so)
+        "${PATCHELF}" --replace-needed "libstagefright_foundation.so" "libstagefright_foundation-v33.so" "${2}"
+        ;;
     *)
         return 1
         ;;
