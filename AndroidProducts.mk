@@ -16,9 +16,4 @@
 
 PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/derp_taimen.mk \
-    $(LOCAL_DIR)/aosp_taimen_hwasan.mk \
-
-COMMON_LUNCH_CHOICES := \
-    derp_taimen-userdebug \
-    derp_taimen-user \
-    derp_taimen-eng
+    $(LOCAL_DIR)/aosp_taimen_hwasan.mk
