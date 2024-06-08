@@ -1,0 +1,5 @@
+device/google/
+kernel/google/
+vendor/google/
+packages/apps/GoogleCamera
+packages/apps/ElmyraService
