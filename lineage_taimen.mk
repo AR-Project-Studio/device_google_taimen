@@ -25,6 +25,9 @@ $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 EVO_BUILD_TYPE := Official
 WITH_GMS := true
 
+# Inherit BCR
+BUILD_BCR := false
+
 # EPPE
 TARGET_DISABLE_EPPE := true
 
