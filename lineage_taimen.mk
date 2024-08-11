@@ -24,6 +24,7 @@ $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 # RisingOS Specific Flags
 RISING_MAINTAINER=SleepQueen
 TARGET_DEFAULT_PIXEL_LAUNCHER := true
+TARGET_PREBUILT_BCR := false
 WITH_GMS := true
 
 # EPPE
